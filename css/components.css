@@ -41,10 +41,14 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .hero-kicker{font-size:13px;font-weight:700;color:var(--blue-deep);letter-spacing:.06em;margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .hero-kicker span{height:1px;width:34px;background:linear-gradient(90deg,var(--blue),transparent)}
 .hero h1{font-size:clamp(33px,3.3vw,48px);line-height:1.26;font-weight:900;letter-spacing:-.035em;color:var(--ink)}
-.hero h1 .l1{display:block;font-size:.55em;font-weight:700;letter-spacing:.005em;color:var(--ink);margin-bottom:14px}
+.hero h1 .l1{display:block;font-size:.55em;font-weight:700;letter-spacing:.005em;color:var(--blue-deep);margin-bottom:14px}
 .hero h1 .l2{display:block;white-space:nowrap}
 .t-blue{color:var(--blue)}
+.t-violet{color:var(--violet)}
+.t-pink{color:var(--pink)}
 .t-grad{background:linear-gradient(100deg,#1668ff 8%,#7a4bff 48%,#e2157f 96%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.t-light{color:#fff}
+.t-light-grad{background:linear-gradient(100deg,#cfe4ff,#e6d4ff 50%,#ffd6ec);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-sub{margin-top:24px;font-size:15.5px;line-height:1.95;color:var(--muted);max-width:500px}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 .hero-trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:34px;padding-top:22px;border-top:1px solid var(--line)}
