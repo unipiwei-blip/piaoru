@@ -6,7 +6,7 @@
 function productCard(p, i){
   var points = p.ingredients.slice(0,3).map(function(x){ return "<span>" + x + "</span>"; }).join("");
   return '<article class="case-card reveal d' + ((i % 3) + 1) + '" data-route="#/product/' + p.id + '">' +
-    '<div class="case-shot"><img src="' + p.img + '" alt="' + p.alt + '" loading="lazy"></div>' +
+    '<div class="case-shot"><div class="browser-dots"><i></i><i></i><i></i></div><img src="' + p.img + '" alt="' + p.alt + '" loading="lazy"></div>' +
     '<div class="case-body">' +
       '<div class="case-meta"><span class="tagx">' + p.tag + '</span></div>' +
       '<h3>' + p.name + '</h3>' +
@@ -48,7 +48,7 @@ function renderProduct(id){
 function articleCard(a, i){
   var points = a.points.map(function(x){ return "<span>" + x + "</span>"; }).join("");
   return '<article class="case-card reveal d' + ((i % 3) + 1) + '" data-route="#/article/' + a.id + '">' +
-    '<div class="case-shot"><img src="' + a.img + '" alt="' + a.alt + '" loading="lazy"></div>' +
+    '<div class="case-shot"><div class="browser-dots"><i></i><i></i><i></i></div><img src="' + a.img + '" alt="' + a.alt + '" loading="lazy"></div>' +
     '<div class="case-body">' +
       '<div class="case-meta"><span class="tagx">' + a.tag + '</span><span class="url">' + a.date + '</span></div>' +
       '<h3>' + a.title + '</h3>' +
