@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.piaoru.com.cn/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.piaoru.com.cn/products</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.piaoru.com.cn/product/oil</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.piaoru.com.cn/product/repair</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.piaoru.com.cn/product/volume</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.piaoru.com.cn/product/soothe</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.piaoru.com.cn/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.piaoru.com.cn/science</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.piaoru.com.cn/journal</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.piaoru.com.cn/article/choose-by-hair</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.piaoru.com.cn/article/wash-steps</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.piaoru.com.cn/article/hair-myths</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.piaoru.com.cn/article/scalp-hair</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.piaoru.com.cn/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>
