@@ -1,0 +1,118 @@
+/* =============================================================
+   飘茹 PIAORU · 基础层 base.css
+   设计变量 / 重置 / 全局背景 / 容器 / 按钮 / 通用标题 / 网格 / 动画 / 响应式
+   ============================================================= */
+
+:root{
+  --blue:#1a6bff; --blue-deep:#0b47d6; --blue-soft:#4d9bff; --cyan:#37c2ff;
+  --pink:#e2157f; --violet:#7a4bff; --orange:#ffa62b; --green:#0d9c6c;
+  --ink:#0a1e3c; --ink-2:#152f55; --muted:#5d7192;
+  --line:rgba(22,94,200,.13);
+  --glass:rgba(255,255,255,.68); --glass-strong:rgba(255,255,255,.86);
+  --bg:#f4f9ff;
+  --shadow:0 18px 48px rgba(20,80,180,.11),0 2px 8px rgba(20,80,180,.05);
+  --shadow-lg:0 28px 70px rgba(20,80,180,.17);
+  --r:22px; --max:1200px; --ease:cubic-bezier(.22,.75,.28,1);
+}
+
+/* ---------- 重置 ---------- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:96px}
+body{
+  background:var(--bg); color:var(--ink);
+  /* 系统字体栈，对齐参考站，不依赖远程字体 */
+  font-family:"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+h1,h2,h3,h4,p{margin:0}
+ul{list-style:none}
+::selection{background:rgba(26,107,255,.18);color:var(--blue-deep)}
+
+/* ---------- 全局背景光斑 / 网格 ---------- */
+body::before{
+  content:""; position:fixed; inset:0; z-index:-2; pointer-events:none;
+  background:
+    radial-gradient(760px 520px at 88% 4%,rgba(76,158,255,.20),transparent 68%),
+    radial-gradient(680px 480px at 2% 24%,rgba(122,75,255,.10),transparent 70%),
+    radial-gradient(720px 520px at 60% 92%,rgba(55,194,255,.13),transparent 70%),
+    linear-gradient(180deg,#f7fbff 0%,#eef6ff 52%,#f8fbff 100%);
+}
+body::after{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.45;
+  background-image:
+    linear-gradient(rgba(26,107,255,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(26,107,255,.045) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.7),transparent 78%);
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.7),transparent 78%);
+}
+
+/* ---------- 容器 ---------- */
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 26px}
+
+/* ---------- 通用区块 ---------- */
+section.section{padding:88px 0;position:relative}
+.section.tight{padding:64px 0}
+.sec-head{max-width:660px;margin:0 auto 44px;text-align:center}
+.sec-head .eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:11.5px; font-weight:900; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--blue); margin-bottom:15px;
+}
+.sec-head .eyebrow::before{content:"";width:24px;height:2px;background:linear-gradient(90deg,var(--blue),var(--pink));border-radius:2px}
+.sec-head h2{font-size:clamp(29px,3.3vw,44px);line-height:1.28;font-weight:900;letter-spacing:-.02em;color:var(--ink);margin:10px 0 14px}
+.sec-head p{color:var(--muted);font-size:15.5px;line-height:1.95}
+
+/* ---------- 按钮 ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:14px;font-size:15px;font-weight:700;cursor:pointer;border:1px solid transparent;transition:transform .2s,box-shadow .2s}
+.btn svg{width:16px;height:16px}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue-deep));color:#fff;box-shadow:0 12px 28px rgba(26,107,255,.32)}
+.btn-primary:hover{box-shadow:0 16px 34px rgba(40,86,235,.40),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-ghost{background:var(--glass-strong);border-color:rgba(26,107,255,.24);color:var(--blue-deep);box-shadow:0 6px 18px rgba(20,80,180,.07)}
+.btn-ghost:hover{background:#fff;border-color:var(--blue)}
+.btn-white{background:#fff;color:var(--blue-deep);box-shadow:0 12px 28px rgba(0,0,0,.18)}
+.btn-outline{color:#fff;border:1.5px solid rgba(255,255,255,.62);background:rgba(255,255,255,.08)}
+.btn:hover{transform:translateY(-2px)}
+
+/* ---------- 网格 ---------- */
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+
+/* ---------- 入场动画 ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
+
+/* ---------- 视图切换 ---------- */
+.view{display:none;animation:fade .35s ease}
+.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3,.flow{grid-template-columns:repeat(2,1fr)}
+  .g2{grid-template-columns:1fr}
+  .split,.detail-grid,.contact-grid,.cta-grid{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:repeat(2,1fr);gap:14px;padding:20px}
+  .stat:nth-child(2){border-right:0}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:680px){
+  .g4,.g3,.g2,.flow{grid-template-columns:1fr}
+  .stat-strip{grid-template-columns:1fr 1fr}
+  .container{padding:0 18px}
+  section.section{padding:52px 0}
+  .cta-dark{padding:38px 30px}
+  .cta-checks{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
