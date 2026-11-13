@@ -17,7 +17,7 @@
 
 /* ---------- 重置 ---------- */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 [id]{scroll-margin-top:96px}
 body{
   background:var(--bg); color:var(--ink);
@@ -101,19 +101,12 @@ section.section{padding:88px 0;position:relative}
 @media (max-width:900px){
   .g3{grid-template-columns:repeat(2,1fr)}
   .g2{grid-template-columns:1fr}
-  .split,.detail-grid,.contact-grid,.cta-grid{grid-template-columns:1fr;gap:30px}
-  .stat-strip{grid-template-columns:repeat(2,1fr);gap:14px;padding:20px}
-  .stat:nth-child(2){border-right:0}
-  .foot-grid{grid-template-columns:repeat(2,1fr)}
   section.section{padding:70px 0}
 }
 @media (max-width:640px){
-  .g2,.g3,.g4,.flow{grid-template-columns:1fr}
-  .stat-strip{grid-template-columns:1fr 1fr}
+  .g2,.g3,.g4{grid-template-columns:1fr}
   .container{padding:0 18px}
   section.section{padding:60px 0}
-  .cta-dark{padding:38px 30px}
-  .cta-checks{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
