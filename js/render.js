@@ -8,7 +8,7 @@ function productCard(p, i){
   return '<article class="case-card reveal d' + ((i % 3) + 1) + '" data-route="#/product/' + p.id + '">' +
     '<div class="case-shot"><div class="browser-dots"><i></i><i></i><i></i></div><img src="' + p.img + '" alt="' + p.alt + '" loading="lazy"></div>' +
     '<div class="case-body">' +
-      '<div class="case-meta"><span class="tagx">' + p.tag + '</span></div>' +
+      '<div class="case-meta"><span class="tagx tagx-pro">' + p.tag + '</span></div>' +
       '<h3>' + p.name + '</h3>' +
       '<p>' + p.desc + '</p>' +
       '<div class="case-points">' + points + '</div>' +
@@ -34,7 +34,7 @@ function renderProduct(id){
   host.innerHTML =
     '<div class="detail-img"><img src="' + p.img + '" alt="' + p.alt + '"></div>' +
     '<div>' +
-      '<span class="tagx" style="font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;background:rgba(26,107,255,.09);color:var(--blue-deep)">' + p.tag + '</span>' +
+      '<span class="tagx tagx-pro">' + p.tag + '</span>' +
       '<h1>' + p.name + '</h1>' +
       '<p class="detail-desc">' + p.desc + '</p>' +
       '<div class="ingredient-tags">' + tags + '</div>' +
@@ -50,7 +50,7 @@ function articleCard(a, i){
   return '<article class="case-card reveal d' + ((i % 3) + 1) + '" data-route="#/article/' + a.id + '">' +
     '<div class="case-shot"><div class="browser-dots"><i></i><i></i><i></i></div><img src="' + a.img + '" alt="' + a.alt + '" loading="lazy"></div>' +
     '<div class="case-body">' +
-      '<div class="case-meta"><span class="tagx">' + a.tag + '</span><span class="url">' + a.date + '</span></div>' +
+      '<div class="case-meta"><span class="tagx tagx-art">' + a.tag + '</span><span class="url">' + a.date + '</span></div>' +
       '<h3>' + a.title + '</h3>' +
       '<p>' + a.excerpt + '</p>' +
       '<div class="case-points">' + points + '</div>' +
@@ -73,7 +73,7 @@ function renderArticle(id){
   var body = a.body.map(function(sec){ return "<h2>" + sec[0] + "</h2><p>" + sec[1] + "</p>"; }).join("");
 
   host.innerHTML =
-    '<span class="tagx" style="font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;background:rgba(26,107,255,.09);color:var(--blue-deep)">' + a.tag + '</span>' +
+    '<span class="tagx tagx-art">' + a.tag + '</span>' +
     '<h1 style="font-size:30px;color:var(--blue-deep);margin:10px 0 14px">' + a.title + '</h1>' +
     '<p style="color:var(--muted);margin-bottom:8px">' + a.date + '</p>' +
     '<p style="color:var(--muted);margin-bottom:24px">' + a.excerpt + '</p>' +

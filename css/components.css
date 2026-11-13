@@ -123,7 +123,9 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .case-shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(6,32,86,.28))}
 .case-body{padding:24px 25px 26px;display:flex;flex-direction:column;flex:1}
 .case-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.case-meta .tagx{font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;background:rgba(26,107,255,.09);color:var(--blue-deep)}
+.tagx{font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;display:inline-block}
+.tagx-pro{background:rgba(26,107,255,.10);color:#1668ff;border:1px solid rgba(26,107,255,.18)}
+.tagx-art{background:rgba(165,60,224,.09);color:#8a3ff0;border:1px solid rgba(165,60,224,.18)}
 .case-meta .url{font-size:11.5px;color:var(--muted)}
 .case-body h3{font-size:20px;font-weight:850;letter-spacing:-.01em;line-height:1.45;color:var(--blue-deep)}
 .case-body p{font-size:14px;color:var(--muted);line-height:1.9;margin-top:10px}
@@ -218,6 +220,12 @@ footer .brand-name small{color:#9fc9e8}
 footer p,footer a{font-size:14px;color:#bbd6ea}
 footer ul li{padding:6px 0}
 footer a:hover{color:#fff}
+.foot-links{border-top:1px solid rgba(255,255,255,.14);padding:24px 0}
+.foot-links h4{font-size:14px;color:#fff;margin-bottom:12px;letter-spacing:.04em}
+.foot-links ul{display:flex;flex-wrap:wrap;gap:8px 20px}
+.foot-links ul li{padding:0}
+.foot-links a{font-size:12.5px;color:#9fc9e8}
+.foot-links a:hover{color:#fff}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding:20px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#9fc9e8}
 
 /* ---------- 窄屏：导航 / Hero（对齐参考站 900 / 640 断点） ---------- */
