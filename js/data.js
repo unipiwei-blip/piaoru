@@ -106,11 +106,11 @@ var FAQS = [
 ];
 
 var SEO = {
-  home:{ title:"飘茹洗发水官网 PIAORU — 净透头皮，柔亮发丝 | www.piaoru.com.cn", desc:"飘茹（PIAORU）专注头皮清洁与发丝养护，提供控油、修护、蓬松、舒缓去屑等系列洗发水产品。了解成分科技、护发知识与品牌故事。", kw:"飘茹洗发水,PIAORU,控油洗发水,修护洗发水,蓬松洗发水,去屑洗发水,洗护品牌,头皮护理", url:"https://www.piaoru.com.cn/" },
+  home:{ title:"飘茹洗发水官网 PIAORU — 净透头皮，柔亮发丝 | www.piaoru.com.cn", desc:"飘茹（PIAORU）专注头皮清洁与发丝养护，提供控油、修护、蓬松、舒缓去屑等系列洗发水产品。了解成分护理、护发知识与品牌故事。", kw:"飘茹洗发水,PIAORU,控油洗发水,修护洗发水,蓬松洗发水,去屑洗发水,洗护品牌,头皮护理", url:"https://www.piaoru.com.cn/" },
   products:{ title:"产品系列 — 飘茹洗发水官网 | www.piaoru.com.cn", desc:"浏览飘茹全线洗发水：清透控油、水润修护、蓬松强韧、舒缓去屑四款系列，查看适用发质与核心成分。", kw:"飘茹产品系列,控油洗发水,修护洗发水,蓬松洗发水,去屑洗发水", url:"https://www.piaoru.com.cn/products" },
   product:{ title:"产品详情 — 飘茹洗发水官网 | www.piaoru.com.cn", desc:"飘茹单款洗发水产品详情，包含核心成分、适用发质、使用方法与规格说明。", kw:"飘茹洗发水详情,洗发水产品成分,适用发质", url:"https://www.piaoru.com.cn/products" },
   about:{ title:"品牌故事 — 飘茹 PIAORU | www.piaoru.com.cn", desc:"了解飘茹品牌理念：成分透明、分发质研发、重视日常使用体验，以及品牌在配方标注、质检与用户反馈上的承诺。", kw:"飘茹品牌故事,PIAORU品牌理念,洗护品牌", url:"https://www.piaoru.com.cn/about" },
-  science:{ title:"成分科技 — 飘茹洗发水官网 | www.piaoru.com.cn", desc:"了解飘茹清洁层、滋养层、舒缓层三层护理思路，以及控油、修护、蓬松、去屑系列中的代表性核心成分。", kw:"洗发水成分科技,头皮护理成分,透明质酸,角蛋白,飘茹", url:"https://www.piaoru.com.cn/science" },
+  science:{ title:"成分护理 — 飘茹洗发水官网 | www.piaoru.com.cn", desc:"了解飘茹清洁层、滋养层、舒缓层三层护理思路，以及控油、修护、蓬松、去屑系列中的代表性核心成分。", kw:"洗发水成分,头皮护理成分,透明质酸,角蛋白,飘茹", url:"https://www.piaoru.com.cn/science" },
   journal:{ title:"护发资讯 — 飘茹官网 | www.piaoru.com.cn", desc:"飘茹护发知识专栏：发质判断、正确洗头步骤、常见护发误区，以及头皮环境与发丝状态的关系。", kw:"护发知识,洗头步骤,发质选择,护发误区,头皮护理", url:"https://www.piaoru.com.cn/journal" },
   article:{ title:"护发文章 — 飘茹官网 | www.piaoru.com.cn", desc:"飘茹护发资讯文章详情，讲解发质选择、洗发步骤、护发误区与头皮护理知识。", kw:"护发文章,洗发水选购指南,头皮护理知识", url:"https://www.piaoru.com.cn/journal" },
   contact:{ title:"联系我们 — 飘茹 PIAORU | www.piaoru.com.cn", desc:"联系飘茹客服团队：产品咨询、选购建议、使用问题与商务合作，客服邮箱 service@piaoru.com.cn。", kw:"飘茹联系客服,洗发水产品咨询,商务合作,PIAORU", url:"https://www.piaoru.com.cn/contact" }

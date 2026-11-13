@@ -74,7 +74,7 @@ function renderArticle(id){
 
   host.innerHTML =
     '<span class="tagx" style="font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;background:rgba(26,107,255,.09);color:var(--blue-deep)">' + a.tag + '</span>' +
-    '<h1 style="font-size:30px;color:var(--ink);margin:10px 0 14px">' + a.title + '</h1>' +
+    '<h1 style="font-size:30px;color:var(--blue-deep);margin:10px 0 14px">' + a.title + '</h1>' +
     '<p style="color:var(--muted);margin-bottom:8px">' + a.date + '</p>' +
     '<p style="color:var(--muted);margin-bottom:24px">' + a.excerpt + '</p>' +
     '<img src="' + a.img + '" alt="' + a.alt + '" style="border-radius:18px;margin-bottom:24px">' + body +

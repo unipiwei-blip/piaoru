@@ -64,7 +64,7 @@ section.section{padding:88px 0;position:relative}
   color:var(--blue); margin-bottom:15px;
 }
 .sec-head .eyebrow::before{content:"";width:24px;height:2px;background:linear-gradient(90deg,var(--blue),var(--pink));border-radius:2px}
-.sec-head h2{font-size:clamp(29px,3.3vw,44px);line-height:1.28;font-weight:900;letter-spacing:-.02em;color:var(--ink);margin:10px 0 14px}
+.sec-head h2{font-size:clamp(29px,3.3vw,44px);line-height:1.28;font-weight:900;letter-spacing:-.02em;color:var(--blue-deep);margin:10px 0 14px}
 .sec-head p{color:var(--muted);font-size:15.5px;line-height:1.95}
 
 /* ---------- 按钮 ---------- */

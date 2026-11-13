@@ -24,7 +24,7 @@ nav.menu a{position:relative;padding:10px 13px;border-radius:10px;font-size:14px
 nav.menu a:hover{color:var(--blue);background:rgba(26,107,255,.07)}
 nav.menu a.active{color:var(--blue);font-weight:800}
 nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--blue),var(--pink))}
-.nav-cta{padding:10px 20px;border-radius:12px;background:var(--ink);color:#fff;font-size:14px;font-weight:500;white-space:nowrap}
+.nav-cta{padding:10px 20px;border-radius:12px;background:linear-gradient(105deg,#1668ff,#4b6bff 52%,#8a3ff0);color:#fff;font-size:14px;font-weight:600;white-space:nowrap;box-shadow:0 8px 20px rgba(40,86,235,.28)}
 .burger{display:none;background:none;cursor:pointer;padding:8px;margin-left:auto}
 .burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px}
 
@@ -67,7 +67,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .core-badge{width:42px;height:42px;margin:0 auto 12px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff5a6e,#ff9a2e);box-shadow:0 8px 20px rgba(255,100,80,.35);color:#fff}
 .core-badge svg{width:23px;height:23px}
 .core-name{font-size:25px;font-weight:900;letter-spacing:.02em;background:linear-gradient(100deg,#1668ff,#7a4bff 50%,#e2157f);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2}
-.core-tag{font-size:12px;font-weight:800;color:var(--ink-2);margin-top:8px}
+.core-tag{font-size:12px;font-weight:800;color:var(--blue-deep);margin-top:8px}
 .core-sub{font-size:10.5px;color:var(--muted);margin-top:7px;line-height:1.6}
 
 /* Hero 两侧玻璃小卡 */
@@ -101,7 +101,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .biz-card.blue .biz-ico{background:linear-gradient(135deg,#2b7bff,#5b5bff)}
 .biz-card.pink .biz-ico{background:linear-gradient(135deg,#ef2c8e,#a53ce0)}
 .biz-card .biz-ico svg{width:30px;height:30px}
-.biz-card h3{font-size:26px;font-weight:900;margin-top:26px;letter-spacing:-.02em;position:relative;z-index:1}
+.biz-card h3{font-size:26px;font-weight:900;margin-top:26px;letter-spacing:-.02em;position:relative;z-index:1;background:linear-gradient(100deg,#1668ff,#7a4bff 50%,#e2157f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .biz-card .sub{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--blue);margin-top:6px;text-transform:uppercase;position:relative;z-index:1}
 .biz-card p{position:relative;z-index:1;max-width:440px;margin-top:12px}
 .biz-list{margin-top:20px;display:grid;gap:9px;position:relative;z-index:1}
@@ -125,7 +125,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .case-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}
 .case-meta .tagx{font-size:11px;font-weight:800;padding:4px 9px;border-radius:6px;background:rgba(26,107,255,.09);color:var(--blue-deep)}
 .case-meta .url{font-size:11.5px;color:var(--muted)}
-.case-body h3{font-size:20px;font-weight:850;letter-spacing:-.01em;line-height:1.45}
+.case-body h3{font-size:20px;font-weight:850;letter-spacing:-.01em;line-height:1.45;color:var(--blue-deep)}
 .case-body p{font-size:14px;color:var(--muted);line-height:1.9;margin-top:10px}
 .case-points{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .case-points span{font-size:11.5px;color:var(--ink-2);background:rgba(26,107,255,.055);border:1px solid var(--line);padding:5px 9px;border-radius:7px;font-weight:600}
@@ -138,7 +138,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .flow-item{text-align:center;position:relative;z-index:1}
 .flow-dot{width:68px;height:68px;margin:0 auto;border-radius:22px;background:#fff;border:1px solid rgba(26,107,255,.16);box-shadow:0 12px 26px rgba(20,80,180,.12);display:flex;align-items:center;justify-content:center;font-size:23px;font-weight:900;color:var(--blue);position:relative}
 .flow-dot::after{content:"";position:absolute;inset:5px;border-radius:18px;border:1px dashed rgba(26,107,255,.22)}
-.flow-item h3{font-size:17px;font-weight:800;color:var(--ink);margin-top:18px}
+.flow-item h3{font-size:17px;font-weight:800;color:var(--blue-deep);margin-top:18px}
 .flow-item p{font-size:13.5px;color:var(--muted);margin-top:8px;max-width:260px;margin-left:auto;margin-right:auto}
 
 /* ---------- 图文区块 ---------- */
@@ -152,7 +152,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 /* ---------- FAQ ---------- */
 .faq-list{display:grid;gap:14px;max-width:860px;margin:0 auto}
 .faq-item{background:var(--glass-strong);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
-.faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;cursor:pointer;font-weight:700;color:var(--ink);font-size:15.5px}
+.faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;cursor:pointer;font-weight:700;color:var(--blue-deep);font-size:15.5px}
 .faq-q .faq-arrow{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:rgba(26,107,255,.1);display:flex;align-items:center;justify-content:center;transition:transform .25s;color:var(--blue)}
 .faq-item.open .faq-arrow{transform:rotate(180deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s var(--ease)}
@@ -181,7 +181,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .breadcrumb a:hover{text-decoration:underline}
 .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
 .detail-img{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg)}
-.detail h1{font-size:30px;color:var(--ink);margin:8px 0 14px}
+.detail h1{font-size:30px;margin:8px 0 14px;background:linear-gradient(100deg,#1668ff,#7a4bff 50%,#e2157f);-webkit-background-clip:text;background-clip:text;color:transparent}
 .detail-desc{color:var(--muted);font-size:15.5px;margin-bottom:22px}
 .spec-table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
 .spec-table th,.spec-table td{padding:14px 18px;font-size:14px;border-bottom:1px solid var(--line);text-align:left}
@@ -190,7 +190,7 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .ingredient-tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
 .ingredient-tags span{background:rgba(26,107,255,.09);color:var(--blue-deep);font-size:13px;font-weight:500;padding:8px 14px;border-radius:999px}
 .article-body{max-width:760px;margin:0 auto}
-.article-body h2{font-size:22px;color:var(--ink);margin:28px 0 12px}
+.article-body h2{font-size:22px;color:var(--blue-deep);margin:28px 0 12px}
 .article-body p{margin:14px 0;color:var(--ink-2);font-size:15.5px}
 
 /* ---------- 联系页 ---------- */
@@ -199,10 +199,10 @@ nav.menu a.active::after{content:"";position:absolute;left:13px;right:13px;botto
 .contact-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
 .contact-item:last-child{border-bottom:none}
 .feature-ico{flex:0 0 44px;height:44px;border-radius:14px;background:linear-gradient(135deg,rgba(26,107,255,.12),rgba(55,194,255,.12));display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.contact-item b{display:block;color:var(--ink)}
+.contact-item b{display:block;color:var(--blue-deep)}
 .contact-item span{font-size:14px;color:var(--muted)}
 form .field{margin-bottom:18px}
-form label{display:block;font-size:14px;font-weight:700;color:var(--ink);margin-bottom:8px}
+form label{display:block;font-size:14px;font-weight:700;color:var(--ink-2);margin-bottom:8px}
 form input,form textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:14px;font-family:var(--font,inherit);font-size:15px;background:#fbfdff;color:var(--ink)}
 form input:focus,form textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(26,107,255,.15)}
 form textarea{min-height:130px;resize:vertical}
@@ -210,7 +210,7 @@ form textarea{min-height:130px;resize:vertical}
 .form-success{display:none;margin-top:16px;padding:14px 18px;border-radius:14px;background:#eef7ff;color:var(--blue-deep);font-size:14.5px;font-weight:500}
 
 /* ---------- 页脚 ---------- */
-footer.site{background:var(--ink);color:#d7e8f6;padding:56px 0 0;margin-top:40px}
+footer.site{background:linear-gradient(120deg,#071c43 0%,#0b3280 50%,#123a91 100%);color:#d7e8f6;padding:56px 0 0;margin-top:40px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:36px}
 footer h4{color:#fff;font-size:15px;margin-bottom:16px}
 footer .brand-name{color:#fff}
