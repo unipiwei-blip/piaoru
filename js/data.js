@@ -113,5 +113,5 @@ var SEO = {
   science:{ title:"成分护理 — 飘茹洗发水官网 | www.piaoru.com.cn", desc:"了解飘茹清洁层、滋养层、舒缓层三层护理思路，以及控油、修护、蓬松、去屑系列中的代表性核心成分。", kw:"洗发水成分,头皮护理成分,透明质酸,角蛋白,飘茹", url:"https://www.piaoru.com.cn/science" },
   journal:{ title:"护发资讯 — 飘茹官网 | www.piaoru.com.cn", desc:"飘茹护发知识专栏：发质判断、正确洗头步骤、常见护发误区，以及头皮环境与发丝状态的关系。", kw:"护发知识,洗头步骤,发质选择,护发误区,头皮护理", url:"https://www.piaoru.com.cn/journal" },
   article:{ title:"护发文章 — 飘茹官网 | www.piaoru.com.cn", desc:"飘茹护发资讯文章详情，讲解发质选择、洗发步骤、护发误区与头皮护理知识。", kw:"护发文章,洗发水选购指南,头皮护理知识", url:"https://www.piaoru.com.cn/journal" },
-  contact:{ title:"联系我们 — 飘茹 PIAORU | www.piaoru.com.cn", desc:"联系飘茹客服团队：产品咨询、选购建议、使用问题与商务合作，客服邮箱 service@piaoru.com.cn。", kw:"飘茹联系客服,洗发水产品咨询,商务合作,PIAORU", url:"https://www.piaoru.com.cn/contact" }
+  contact:{ title:"联系我们 — 飘茹 PIAORU | www.piaoru.com.cn", desc:"联系飘茹客服团队：产品咨询、选购建议、使用问题与商务合作，客服邮箱 one@gdiis.com。", kw:"飘茹联系客服,洗发水产品咨询,商务合作,PIAORU", url:"https://www.piaoru.com.cn/contact" }
 };
